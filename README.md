@@ -258,9 +258,9 @@ EaseLink_V2/
 ![Requests](EaseLink_V2/screenshots/requests.png)
 
 ### Gestion des prestataires
-![Providers](EaseLink_V2/screenshots/service%20providers.png)
+![Providers](EaseLink_V2/screenshots/serviceProviders.png)
 
 ### Liaison client–prestataire
-![LinkPage](screenshots/linking%20window.png)
+![LinkPage](EaseLink_V2/screenshots/linkPage.png)
 
 > Projet académique Java — EaseLink V2
