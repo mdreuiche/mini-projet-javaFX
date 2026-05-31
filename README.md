@@ -249,16 +249,16 @@ EaseLink_V2/
 ## Screenshots
 
 ### Tableau de bord
-![Dashboard](screenshots/Dashboard.png)
+![Dashboard](EaseLink_V2/screenshots/Dashboard.png)
 
 ### Gestion des clients
-![Clients](screenshots/clients.png)
+![Clients](EaseLink_V2/screenshots/clients.png)
 
 ### Gestion des requetes
-![Requests](screenshots/requests.png)
+![Requests](EaseLink_V2/screenshots/requests.png)
 
 ### Gestion des prestataires
-![Providers](screenshots/service providers.png)
+![Providers](EaseLink_V2/screenshots/service providers.png)
 
 ### Liaison client–prestataire
 ![LinkPage](screenshots/linking window.png)
