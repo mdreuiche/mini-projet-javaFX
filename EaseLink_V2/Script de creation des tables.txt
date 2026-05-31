@@ -1,0 +1,54 @@
+CREATE TABLE Providers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    service VARCHAR(50) NOT NULL,
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL,
+    added_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+CREATE TABLE requests (
+    request_id INT AUTO_INCREMENT PRIMARY KEY,
+    client_id INT NOT NULL,
+    service_requested VARCHAR(255) NOT NULL,
+    requested_date DATETIME NOT NULL,
+    completion_date DATETIME,
+    address VARCHAR(255),
+    estimated_price DECIMAL(10, 2),
+    FOREIGN KEY (client_id) REFERENCES clients(id) 
+);
+
+CREATE TABLE clients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    phone VARCHAR(50) NOT NULL,
+    service_requested VARCHAR(50) NOT NULL,
+    description TEXT,
+    address VARCHAR(255) NOT NULL,
+    added_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Provider_Client (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    provider_id INT NOT NULL,
+    client_id INT NOT NULL,
+    service VARCHAR(50) NOT NULL,	
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL,
+    start_date date , 
+    end_date date , 
+    FOREIGN KEY (provider_id) REFERENCES Providers(id) ON DELETE CASCADE,
+    FOREIGN KEY (client_id) REFERENCES Clients(id) ON DELETE CASCADE
+);
+
+CREATE TABLE ServiceManager (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+INSERT INTO ServiceManager (username, password)
+VALUES 
+(admin, SHA2(CONCAT('admin', 'admin123'), 256));

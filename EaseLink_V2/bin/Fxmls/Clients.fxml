@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClientsController">
+   <children>
+   <Label layoutX="45.0" text="Clients">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchClientField" layoutX="45.0" layoutY="72.0" prefHeight="26.0" prefWidth="173.0" promptText="Search Client..." />
+      <TableView fx:id="clientTable" layoutX="45.0" layoutY="107.0" prefHeight="504" prefWidth="912.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="31.200008392333984" text="ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="114.39999389648438" text="Name" />
+            <TableColumn fx:id="emailColumn" prefWidth="108.0" text="Email" />
+            <TableColumn fx:id="phoneColumn" prefWidth="124.8" text="Phone" />
+            <TableColumn fx:id="serviceRequestedColumn" prefWidth="120.0" text="Service Requested" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="207.2" text="Description" />
+            <TableColumn fx:id="addressColumn" prefWidth="120.0" text="Address" />
+            <TableColumn fx:id="addedDateColumn" prefWidth="123.2" text="Added Date" />
+         </columns>
+      </TableView>
+      <HBox alignment="CENTER_RIGHT" layoutX="596.0" layoutY="611.0" prefHeight="56.0" prefWidth="303.0" spacing="30.0">
+         <children>
+            <Button fx:id="updateButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Modify" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Delete" />
+            <Button fx:id="addButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Add" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

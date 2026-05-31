@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="453.0" prefWidth="824.0" spacing="15" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LinkPageController">
+    <!-- Title -->
+    <Label style="-fx-text-fill: #2c3e50;" text="Link Client &amp; Provider">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font>
+      <padding>
+         <Insets top="10.0" />
+      </padding>
+    </Label>
+
+    <HBox alignment="CENTER" spacing="20">
+        <!-- Client List -->
+        <VBox alignment="CENTER" spacing="10">
+            <TextField fx:id="searchClientField" promptText="Search Client..." />
+            <TableView fx:id="clientTable">
+                <columns>
+                    <TableColumn fx:id="clientIdColumn" prefWidth="50" text="ID" />
+                    <TableColumn fx:id="clientNameColumn" prefWidth="196.80000686645508" text="Name" />
+                </columns>
+            </TableView>
+        </VBox>
+
+        <!-- Provider List -->
+        <VBox alignment="CENTER" spacing="10">
+            <TextField fx:id="searchProviderField" promptText="Search Provider..." />
+            <TableView fx:id="providerTable">
+                <columns>
+                	<TableColumn fx:id="providerIdColumn" prefWidth="50" text="ID" />
+                    <TableColumn fx:id="providerNameColumn" prefWidth="150" text="Name" />
+                    <TableColumn fx:id="providerServiceColumn" prefWidth="198.40000915527344" text="Service" />
+                    <TableColumn fx:id="providerPriceColumn" prefWidth="102.39996337890625" text="Price" />
+                    
+                </columns>
+            </TableView>
+        </VBox>
+    </HBox>
+
+    <!-- Date Fields -->
+    <HBox alignment="CENTER" prefHeight="56.0" prefWidth="735.0" spacing="20">
+         <Label text="Start Date:" />
+      <DatePicker fx:id="startDatePicker" promptText="Select Start Date" />
+         <Label text="End Date:" />
+      <DatePicker fx:id="endDatePicker" promptText="Select End Date" />
+   
+                <!-- Link Button -->
+       <Button fx:id="linkButton" alignment="CENTER" prefHeight="131.0" prefWidth="74.0" style="-fx-background-color: #3498db; -fx-text-fill: white;" text="Link">
+         <HBox.margin>
+            <Insets left="25.0" />
+         </HBox.margin>
+      </Button>
+      <padding>
+         <Insets bottom="20.0" top="10.0" />
+      </padding>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+    </HBox>
+</VBox>

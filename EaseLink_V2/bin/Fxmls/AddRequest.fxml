@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddRequestController">
+<children>
+        <Label layoutX="258.0" layoutY="27.0" text="Client ID:" />
+        <TextField fx:id="clientIdField" layoutX="333.0" layoutY="23.0" />
+
+        <Label layoutX="208.0" layoutY="77.0" text="Service Requested:" />
+        <TextField fx:id="serviceRequestedField" layoutX="333.0" layoutY="73.0" />
+
+        <Label layoutX="214.0" layoutY="130.0" text="Requested Date:" />
+        <DatePicker fx:id="requestedDateField" layoutX="333.0" layoutY="126.0" />
+
+        <Label layoutX="211.0" layoutY="179.0" text="Completion Date:" />
+        <DatePicker fx:id="completionDateField" layoutX="333.0" layoutY="175.0" />
+
+        <Label layoutX="258.0" layoutY="230.0" text="Location:" />
+        <TextField fx:id="locationField" layoutX="333.0" layoutY="226.0" />
+
+        <Label layoutX="223.0" layoutY="280.0" text="Estimated Price:" />
+        <TextField fx:id="estimatedPriceField" layoutX="333.0" layoutY="280.0" />
+
+        <Button fx:id="addButton" layoutX="392.0" layoutY="343.0" text="Add Request" />
+    </children>
+</AnchorPane>

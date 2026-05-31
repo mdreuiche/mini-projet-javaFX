@@ -1,0 +1,86 @@
+/* General Styles */
+*{
+	    -fx-font-family: "Arial";
+}
+
+
+
+/* BorderPane Center */
+.center {
+    -fx-background-color: white;
+    
+}
+
+/* Welcome Text */
+
+.All{
+	    -fx-spacing: 250;
+    -fx-padding: 0;
+    
+}
+
+
+.text {
+    -fx-fill: black;
+    -fx-font-size: 20px;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+
+}
+
+/* VBox Styles */
+.inputarea{
+    -fx-alignment: center;
+    -fx-spacing: 10;
+    -fx-padding: 10;
+     -fx-background-color: white;
+}
+
+/* Labels */
+
+
+/* TextFields */
+.text-field {
+    -fx-pref-width: 280px;
+    -fx-pref-height: 400px;
+    -fx-padding: 5 10;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-border-radius: 10px;
+    
+}
+
+.text-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Button */
+.button {
+    -fx-background-color: #ff5722;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 5 60;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #e64a19;
+}
+
+/* ImageView */
+.image-view {
+    -fx-border-width: 100%;
+     -fx-alignment:"CENTER_RIGHT"
+     
+}
+
+/* HBox */
+.hbox {
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
+
+/* Responsive Design */

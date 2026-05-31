@@ -1,0 +1,74 @@
+/* Set base background for the main AnchorPane */
+.root {
+    -fx-background-color: #121212; /* Dark background for the root */
+}
+/* Style the SplitPane to give it clean separation */
+.split-pane {
+    -fx-background-color: black; /* Slightly lighter background for SplitPane */
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+}
+/* Style the left pane */
+.left-section {
+    -fx-background-color: #2e2e2e; /* Dark background for left section */
+    -fx-border-radius: 20px 0 0 20px; /* Rounded corners on left */
+    -fx-background-radius: 20px 0 0 20px;
+    -fx-padding: 20px 10px;
+}
+/* Logo Section Style */
+.logo-text {
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-weight: bold;
+}
+/* Icon and label section for menu items */
+.menu-item {
+    -fx-padding: 5px 10px;
+    -fx-spacing: 10px;
+    -fx-alignment: CENTER_LEFT;
+}
+.menu-item-label {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+/* Icon for the menu items */
+.menu-item-image {
+    -fx-fit-height: 30px;
+    -fx-fit-width: 30px;
+    -fx-preserve-ratio: true;
+}
+/* Style for the bottom section */
+.bottom-section {
+    -fx-padding: 20px 10px;
+    -fx-spacing: 20px;
+    -fx-alignment: CENTER_LEFT;
+}
+/* White background for the right section */
+.right-section {
+    -fx-background-color: white;
+    -fx-padding: 20px;
+}
+/* Styling for the VBox inside the left section */
+.left-menu-vbox {
+    -fx-spacing: 10px;
+    -fx-padding: 10px 0;
+}
+/* Apply hover effect on menu items */
+.menu-item:hover {
+    -fx-background-color: red; /* Slight hover effect */
+    -fx-cursor: hand;
+    -fx-border-radius: 5px;
+}
+/* Adding padding and margin to labels */
+.label {
+    -fx-padding: 0 0 0 10px;
+}
+HBox:hover {
+    -fx-background-color: #1a1a1a; /* Darker gray for hover effect */
+    -fx-cursor: hand;
+}
+.split-pane .split-pane-divider {
+    -fx-background-color: black;
+    -fx-pref-width: 5; /* Adjust thickness */
+}

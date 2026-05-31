@@ -1,0 +1,25 @@
+/* Enlever le hover du HBox */
+.hbox-container {
+    -fx-background-color: transparent;
+}
+
+.hbox-container:hover {
+    -fx-background-color: transparent;
+}
+
+/* Enlever le hover des boutons */
+.button {
+    -fx-background-color: transparent;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+}
+
+.button:hover {
+    -fx-background-color: #f0f0f0; /* Couleur très légère au lieu de noir */
+    -fx-border-color: #999999;
+}
+
+.button:pressed {
+    -fx-background-color: #e0e0e0;
+}
+
