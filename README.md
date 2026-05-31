@@ -14,6 +14,7 @@ Application de gestion de services Java/JavaFX permettant de mettre en relation 
 - [Configuration de la base de données](#configuration-de-la-base-de-données)
 - [Structure du projet](#structure-du-projet)
 - [Utilisation](#utilisation)
+- [Screenshots](#screenshots)
 
 ---
 
@@ -245,5 +246,21 @@ EaseLink_V2/
 4. Utiliser la page **Link** pour associer un client à un prestataire en définissant la période de contrat.
 
 ---
+## Screenshots
+
+### Tableau de bord
+![Dashboard](screenshots/Dashboard.png)
+
+### Gestion des clients
+![Clients](screenshots/clients.png)
+
+### Gestion des requetes
+![Requests](screenshots/requests.png)
+
+### Gestion des prestataires
+![Providers](screenshots/service providers.png)
+
+### Liaison client–prestataire
+![LinkPage](screenshots/linking window.png)
 
 > Projet académique Java — EaseLink V2
